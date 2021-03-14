@@ -4,14 +4,11 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
 		<meta name="title" content="<?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>" />
 		<meta name="description" content="<?= $Wcms->page('description') ?>">
 		<meta name="keywords" content="<?= $Wcms->page('keywords') ?>">
-
 		<meta property="og:url" content="<?= $this->url() ?>" />
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="<?= $Wcms->get('config', 'siteTitle') ?>" />
@@ -35,10 +32,7 @@
 
 		<nav class="navbar navbar-expand-lg navbar-light navbar-default">
 			<div class="container">
-				<a class="navbar-brand" href="<?= $Wcms->url() ?>">
-					<?= $Wcms->siteTitle() ?>
-				</a>
-
+				<a class="navbar-brand" href="<?= $Wcms->url() ?>"><?= $Wcms->siteTitle() ?></a>
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggler navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
 						<span class="navbar-toggler-icon">
@@ -48,7 +42,6 @@
 						</span>
 					</button>
 				</div>
-
 				<div class="collapse navbar-collapse" id="menu-collapse">
 					<ul class="nav navbar-nav navbar-right ml-auto">
 						<?= $Wcms->menu() ?>
@@ -61,7 +54,6 @@
 			<div class="row">
 				<div class="col-lg-12 my-auto text-center padding40">
 					<?= $Wcms->page('content') ?>
-
 				</div>
 			</div>
 		</section>
@@ -72,7 +64,6 @@
 			<div class="row customBackground">
 				<div class="col-lg-12 my-auto text-center padding40 resetTextRotation">
 					<?= $Wcms->block('subside') ?>
-
 				</div>
 			</div>
 		</section>
@@ -87,6 +78,5 @@
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
 		<?= $Wcms->js() ?>
-
 	</body>
 </html>
