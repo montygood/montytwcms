@@ -1,5 +1,4 @@
 <?php global $Wcms ?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -23,16 +22,16 @@
 		<link rel="stylesheet" rel="preload" as="style" href="<?= $Wcms->asset('css/style.css') ?>">
 
 		<?= $Wcms->css() ?>
-
 	</head>
 
 	<body class="d-flex flex-column">
 		<?= $Wcms->settings() ?>
 		<?= $Wcms->alerts() ?>
-
 		<nav class="navbar navbar-expand-lg navbar-light navbar-default">
 			<div class="container">
-				<a class="navbar-brand" href="<?= $Wcms->url() ?>"><?= $Wcms->siteTitle() ?></a>
+				<a class="navbar-brand" href="<?= $Wcms->url() ?>">
+					<?= $Wcms->siteTitle() ?>
+				</a>
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggler navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
 						<span class="navbar-toggler-icon">
@@ -42,6 +41,7 @@
 						</span>
 					</button>
 				</div>
+
 				<div class="collapse navbar-collapse" id="menu-collapse">
 					<ul class="nav navbar-nav navbar-right ml-auto">
 						<?= $Wcms->menu() ?>
@@ -64,12 +64,13 @@
 			<div class="row customBackground">
 				<div class="col-lg-12 my-auto text-center padding40 resetTextRotation">
 					<?= $Wcms->block('subside') ?>
+
 				</div>
 			</div>
 		</section>
 
 		<footer class="mt-4 footer">
-			<div class="container-fluid py-3 text-right">
+			<div class="container-fluid py-3">
 				<?= $Wcms->footer() ?>
 			</div>
 		</footer>
